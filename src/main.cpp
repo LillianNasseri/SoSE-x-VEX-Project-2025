@@ -5,11 +5,25 @@
 // https://ez-robotics.github.io/EZ-Template/
 /////
 
+//// Identifying Ports (not needed now)
+//  - left middle wheel
+// 9 - right middle wheel
+// right front top; 
+
+// Chassis Ports
+// 1 - left back top; pos 
+// 3 - left back middle; neg
+// 4 - left back bottom; pos
+
+// 5 - right back top; neg
+// 6 - right back middle; pos 
+// 7 - right back bottom; neg 
+
 // Chassis constructor
 ez::Drive chassis(
     // These are your drive motors, the first motor is used for sensing!
-    {1, 2, 3},     // Left Chassis Ports (negative port will reverse it!)
-    {-4, -5, -6},  // Right Chassis Ports (negative port will reverse it!)
+    {-1, 3, -4},     // Left Chassis Ports (negative port will reverse it!)
+    {5, -6, 7},  // Right Chassis Ports (negative port will reverse it!)
 
     7,      // IMU Port
     4.125,  // Wheel Diameter (Remember, 4" wheels without screw holes are actually 4.125!)
