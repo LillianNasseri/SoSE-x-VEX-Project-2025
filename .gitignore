@@ -1,0 +1,14 @@
+/build/
+/bin/
+/dist/
+/out/
+*.o
+*.a
+*.log
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.pros/
+.cache/
+.DS_Store
