@@ -1,14 +1,29 @@
+# --- Build artifacts (PROS/C++) ---
 /build/
 /bin/
 /dist/
 /out/
 *.o
+*.d          # <— add this
 *.a
+*.elf
+*.map
+*.lst
+*.hex
+*.bin
+*.out
 *.log
+compile_commands.json
+
+# --- PROS / caches ---
+.pros/
+.cache/
+
+# --- Editors / OS ---
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
-.pros/
-.cache/
+.idea/
 .DS_Store
+Thumbs.db
